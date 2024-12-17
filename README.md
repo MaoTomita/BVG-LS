@@ -1,2 +1,3 @@
 # BVG-LS
-A Simple Finetuning Strategy Based on Bias-Variance Ratios of Layer-Wise Gradients
+Sorry, this project is currently under construction.
+We are working hard to make it available as soon as possible.
