@@ -168,9 +168,9 @@ def main():
     parser = argparse.ArgumentParser(description="Finetuning a model with BVG_LS")
     parser.add_argument("--dataset", type=str, choices=["pets", "dtd", "cifar100"], required=True, help="Target dataset")
     parser.add_argument("--network", type=str, choices=["wrn_50_2", "vit_small"], required=True, help="network")
-    parser.add_argument("--batch_size", type=int, default=32, help="Batch size for training")
-    parser.add_argument("--epochs", type=int, default=10, help="Number of training epochs")
-    parser.add_argument("--lr", type=float, default=0.001, help="Learning rate")
+    parser.add_argument("--batch_size", type=int, default=128, help="Batch size for training")
+    parser.add_argument("--epochs", type=int, default=50, help="Number of training epochs")
+    parser.add_argument("--lr", type=float, default=0.01, help="Learning rate")
     parser.add_argument("--use_wandb", action="store_true", help="Use Weights & Biases for logging")
     args = parser.parse_args()
 
